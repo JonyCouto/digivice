@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oxanium', cursive;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../assets/fundoDigital.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 425px;
+    margin: 10px;
+}
+
+.digivice{
+    width: 100%;
+}
+
+.digimon{
+    position: absolute;
+    left: 36.5%;
+    top: 36%;
+    height: 15.3%;
+    min-height: 115px;
+    border-radius: 14px;
+}
+
+.pesquisar{
+    background-color: #114ed3;
+    position: absolute;
+    bottom: 49%;
+    left: 10%;
+    width: 2.2%;
+    height: 4.8%;
+    min-height: 35px;
+    min-width: 35px;
+    border-radius: 10px;
+    border: solid 2px #333;
+    box-shadow: -2px 3px 0px #888;
+}
+
+.anterior{
+    background-color: #114ed3;
+    position: absolute;
+    bottom: 56%;
+    right: 10%;
+    width: 2.2%;
+    height: 4.8%;
+    min-height: 35px;
+    min-width: 35px;
+    border-radius: 10px;
+    border: solid 2px #333;
+    box-shadow: -2px 3px 0px #888;
+}
+
+.proximo{
+    background-color: #114ed3;
+    position: absolute;
+    bottom: 38%;
+    right: 10%;
+    width: 2.2%;
+    height: 4.8%;
+    min-height: 35px;
+    min-width: 35px;
+    border-radius: 10px;
+    border: solid 2px #333;
+    box-shadow: -2px 3px 0px #888;
+}
+
+.nome{
+    background-color: #114ed3;
+    position: absolute;
+    bottom: 13%;
+    left: 35%;
+    width: 30%;
+    height: 5%;
+    min-height: 20px;
+    min-width: 35px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid 2px #333;
+    box-shadow: -2px 3px 0px #888;
+    padding: 5px;
+    text-align: center;
+}
+
+.level{
+    background-color: #114ed3;
+    position: absolute;
+    top: 12%;
+    left: 35%;
+    width: 30%;
+    height: 5%;
+    min-height: 20px;
+    min-width: 35px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid 2px #333;
+    box-shadow: -2px 3px 0px #888;
+    padding: 5px;
+    text-align: center;
+}
+
+button:active{
+    box-shadow: inset -2px 3px 0 #222; /*Inset é o efeito de sombra pra dentro do elemento*/
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+input:focus{
+    outline: 0; /*Remover efeito de quando o input é clicado*/
+}
+
+.imgBtn{
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 600px){
+    .anterior, .proximo, .pesquisar{
+        min-width: 30px;
+        min-height: 30px;
+    }
+    .digimon{
+        min-height: 100px;
+    }
+}
+
+@media (max-width: 300px){
+    .anterior, .proximo, .pesquisar{
+        min-width: 22px;
+        min-height: 22px;
+    }
+    .level, .nome{
+        min-height: 10px;
+    }
+    .digimon{
+        min-height: 73px;
+    }
+}
